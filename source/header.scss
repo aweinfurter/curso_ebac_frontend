@@ -1,0 +1,15 @@
+$primary-color: #182C61;
+$nav-padding: 16px 0;
+
+header {
+    background-color: $primary-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $nav-padding;
+    }
+}

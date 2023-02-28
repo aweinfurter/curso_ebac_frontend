@@ -1,0 +1,51 @@
+$background-color: #f5f6fa;
+$product-margin-bottom: 32px;
+
+@use 'reset';
+
+@use 'header';
+
+@use 'menu';
+
+@use 'products';
+
+@use 'products-button';
+
+body {
+    background-color: $background-color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+padding: 56px 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+    max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+    display: block;
+    }
+
+    .product-item  {
+        margin-bottom: $product-margin-bottom;
+    }
+}

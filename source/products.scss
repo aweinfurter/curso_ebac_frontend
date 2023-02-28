@@ -1,0 +1,17 @@
+$border-radius: 16px;
+$product-margin-top: 40px;
+$product-column-gap: 1%;
+$product-row-gap: 4%;
+
+.products {
+    margin-top: $product-margin-top;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: $product-column-gap;
+    row-gap: $product-row-gap;
+    width: 100%;
+    img {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+}

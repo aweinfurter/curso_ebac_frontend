@@ -1,0 +1,15 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc ./src/styles/styles.less ./build/styles/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
+}

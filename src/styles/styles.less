@@ -1,0 +1,46 @@
+@import "reset.less";
+@import "variables.less";
+@import "header.less";
+@import "products.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
+
+body {
+    background-color: #colors[color-bg];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @breakpointMobile {
+        .products {
+            display: block;
+        }
+    
+        .product-item  {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media @breakpointTablet {
+        .container {
+            max-width: 80%;
+        }
+    
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+}
+
+
+
+
